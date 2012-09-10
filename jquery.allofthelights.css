@@ -1,0 +1,20 @@
+#switch {
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(images/switch.png) no-repeat 0 0;
+	cursor: pointer;
+	z-index: 200;
+	margin: 0;
+	right: 50px;
+	top: 82px;
+}
+#switch_off {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: url(images/switch.png) no-repeat 0 -30px;
+	cursor: pointer;
+	z-index: 200;
+}

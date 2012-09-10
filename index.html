@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AlloftheLights.js demo</title>
+        <style>
+			body { background: url(images/bg_body.jpg) repeat-x #e5e5e5; padding: 0; margin: 0; }
+			h1 { font-family: "Contrail One"; margin-bottom: 5px; font-size: 36px; }
+			.container { position: relative; padding: 50px; width: 45%; margin: 0 auto; }
+			h1 a, h1 a:link, h1 a:visited { color: #4C4C4C; text-decoration: none; }
+			h1 a:hover, h1 a:focus { color: #6B6B6B; text-decoration: none; }
+			#top { position: relative; display: block; background: #c72034; height: 10px; margin: 0 0 10px 0; border-bottom: 1px solid #E5E5E5; }
+        </style>
+		<link href='http://fonts.googleapis.com/css?family=Contrail+One' rel='stylesheet' type='text/css'>
+		
+		<!-- Allofthelights.js CSS -->
+		<link rel="stylesheet" href="jquery.allofthelights.css">
+    </head>
+    <body>     
+		<div id="top"></div>
+		<div class="container">
+			<h1>Demo <a href="http://www.megaptery.com/allofthelights/">Allofthelights.js</a></h2>			
+			<!-- Allofthelights.js switch & iframe video -->
+			<div id="switch"></div>
+			<iframe id="video" width="600" height="338" src="http://www.youtube.com/embed/HAfFfqiYLp0" frameborder="0" allowfullscreen></iframe>
+		</div>
+    
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		
+		<!-- Allofthelights.js JS -->
+		<script src="jquery.allofthelights.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$("#video").allofthelights();  
+		});
+		</script>
+	</body>
+</html>
