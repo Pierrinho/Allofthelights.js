@@ -121,7 +121,8 @@
 				if (!options.scrolling) {
 					$('body').css('overflow', 'hidden');
 				}
-			}).on('resize', function() {
+			});
+			$(window).on('resize', function() {
 				var display = false;
 				if ( $('div.allofthelights_bg').is(':visible') ) {
 					display = true;
