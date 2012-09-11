@@ -1,6 +1,7 @@
 /*
 * Allofthelights.js
 * Version: 1.0
+* http://www.megaptery.com/allofthelights/
 */
 
 (function ($) {
@@ -11,8 +12,8 @@
             'opacity': '0.9',
             'switch_id': 'switch',
 			'animation': 'fade',
-			'delay_turn_on': '400',
-			'delay_turn_off': '400',
+			'delay_turn_on': 400,
+			'delay_turn_off': 400,
 			'scrolling': true,
 			'clickable_bg': false,
 			'is_responsive': true,
@@ -50,7 +51,7 @@
 
 				var $allVideos = $(this).parent().find(selectors.join(','));
 				
-				var style = '&shy;<style>         \
+				var style = '&shy;<style type="text/css">         \
 				  .fluid_width_video_wrapper {        \
 					 width: 100%;                     \
 					 position: relative;              \
@@ -93,7 +94,7 @@
 				switch_off += ', div.allofthelights_bg';
 			}
 
-			$(window).on('click', switch_off, function() {
+			$('body').on('click', switch_off, function() {
 				variables();
 				update();
 				$('div.allofthelights_bg').fadeOut(+options.delay_turn_off);
@@ -105,12 +106,13 @@
 				variables();
 				if (first_click) {
 					first_click = false;
-					var html = "<style type='text/css'>.allofthelights_bg {display:none;position:absolute;background:"+options.color+";opacity:"+options.opacity+";z-index:"+options.z_index+";}</style>" + "<div id='"+options.switch_id+"_off' style='display:none;position:absolute;top:"+button.top+"px;left:"+button.left+"px;'></div>";
+					var html = "<style type='text/css'>.allofthelights_bg {display:none;position:absolute;background:"+options.color+";z-index:"+options.z_index+";}</style>" + "<div id='"+options.switch_id+"_off' style='display:none;position:absolute;top:"+button.top+"px;left:"+button.left+"px;'></div>";
 					var i 	 = 0;
 					for ( i = 1 ; i <= 4 ; ++i ) {
 						html += "<div id='allofthelights_bg"+i+"' class='allofthelights_bg'></div>"
 					}
 					$('body').append(html);
+					$('.allofthelights_bg').css('opacity',+options.opacity);
 					update();
 				}
 				$('#'+options.switch_id+'_off').fadeIn(0);
