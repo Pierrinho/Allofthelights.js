@@ -21,6 +21,14 @@ http://www.megaptery.com/allofthelights/ - Pierre VION
 - [Page plugin](http://www.megaptery.com/allofthelights/)
 
 
+## Compatibility
+- Chrome
+- Firefox
+- Opera
+- Safari
+- IE9+
+
+
 ## Options
 
 ### color: *'#000000'*
