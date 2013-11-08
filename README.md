@@ -48,7 +48,7 @@ Allows disable scrolling when the light is on if value is false.
 Enables responsive video.
 
 ### custom_player: *null*
-Allows to apply responsive on a custom player. Specify your video vendor selector. Only available when is_responsive = true.
+Allows to apply responsive on a custom player. Specify your video vendor selector. Only available when `is_responsive = true`.
 
 ### callback_turn_on: *function(){}*
 Callback function when the light goes on.
