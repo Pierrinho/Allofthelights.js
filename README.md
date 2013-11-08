@@ -1,5 +1,6 @@
 # Allofthelights.js
 Allofthelights.js is a jQuery plugin to turn off the light and enjoy your videos, try it !
+
 http://www.megaptery.com/allofthelights/ - Pierre VION
 
 ## Features
