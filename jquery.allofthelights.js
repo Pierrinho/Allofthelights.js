@@ -12,15 +12,15 @@
     $.fn.allofthelights = function (options) {
 
         var defaults = {
-            color: 'black',
-            opacity: '0.9',
-            z_index: '10',
-            switch_selector: 'switch',
-			delay_turn_on: 400,
-			delay_turn_off: 400,
-			scrolling: true,
-			is_responsive: true,
-			custom_player: null
+		color: 'black',
+		opacity: '0.9',
+		z_index: '10',
+		switch_selector: 'switch',
+		delay_turn_on: 400,
+		delay_turn_off: 400,
+		scrolling: true,
+		is_responsive: true,
+		custom_player: null
         };
 
 		var options = $.extend(defaults, options);
@@ -51,21 +51,21 @@
 			var $all_videos = $(this).parent().find(selectors.join(','));
 			
 			var style = 
-			'<style type="text/css">				\
+			'<style type="text/css">			\
 				.fluid_width_video_wrapper {		\
-					width: 100%;					\
-					position: relative;				\
-					padding: 0;						\
-				}									\
+					width: 100%;			\
+					position: relative;		\
+					padding: 0;			\
+				}					\
 				.fluid_width_video_wrapper iframe,	\
 				.fluid_width_video_wrapper object,	\
 				.fluid_width_video_wrapper embed {	\
-					position: absolute;				\
-					top: 0;							\
-					left: 0;						\
-					width: 100%;					\
-					height: 100%;					\
-				}									\
+					position: absolute;		\
+					top: 0;				\
+					left: 0;			\
+					width: 100%;			\
+					height: 100%;			\
+				}					\
 			</style>';
 
 			$body.append(style);
@@ -86,14 +86,14 @@
 		}
 
 		var style = 
-		'<style type="text/css">				\
-			.allofthelights_bg {				\
-				position: absolute;				\
-				display: none;					\
+		'<style type="text/css">			\
+			.allofthelights_bg {			\
+				position: absolute;		\
+				display: none;			\
 				background: '+options.color+';	\
 				opacity: '+options.opacity+';	\
 				z-index: '+options.z_index+';	\
-			}									\
+			}					\
 		</style>';
 		$body.append(style);
 
