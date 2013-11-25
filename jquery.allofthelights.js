@@ -117,6 +117,7 @@
 
 		$(window).on('resize', function() {
 			if ($('div.allofthelights_bg').is(':visible')) {
+				$('div.allofthelights_bg').remove();
 				calculating();
 			}
 		});
