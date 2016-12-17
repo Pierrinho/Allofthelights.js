@@ -1,7 +1,10 @@
 # Allofthelights.js
+[![CDNJS](https://img.shields.io/cdnjs/v/Allofthelights.js.svg)](https://cdnjs.com/libraries/Allofthelights.js)
+
 Allofthelights.js is a jQuery plugin to turn off the light and enjoy your videos, try it !
 
 http://www.megaptery.com/allofthelights/ - Pierre VION
+
 
 [![Allofthelights](http://www.megaptery.com/wp-content/uploads/2013/12/turn_off_the_lights_jquery.jpg "Allofthelights")](http://www.megaptery.com/allofthelights/)
 
